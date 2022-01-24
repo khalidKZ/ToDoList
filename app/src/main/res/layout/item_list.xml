@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--اللينير لي اوت هي عبارة عن طبقه او نقدر نقول صفحة اوخرى للجوال
+نقدر نصغرها بحيث تكون طبقه فوق طبقة طبقة الاكتفيتي مين الي هي الصفحة الاصلية-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="153dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:text="مهمة"
+        android:textSize="24sp" />
+
+    <Button
+        android:shadowColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:id="@+id/delete_task"
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="deleteTask"
+        android:text="حذف" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/update_task"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="updateTask"
+        android:text="اضف" />
+
+</LinearLayout>
